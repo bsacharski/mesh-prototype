@@ -1,0 +1,17 @@
+{
+  "name": "mesh-prototype",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@meshtastic/js": "^2.5.9-2"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.2"
+  }
+}
