@@ -1,21 +1,25 @@
 {
   "name": "mesh-prototype",
   "version": "1.0.0",
-  "main": "src/app.ts",
+  "main": "src/app.js",
   "author": "",
   "license": "GPL-3.0",
   "description": "",
-  "dependencies": {
-    "@meshtastic/js": "^2.5.9-2"
-  },
+  "type": "module",
   "scripts": {
-    "compile": "npx tsc",
-    "lint": "npx eslint src/"
+    "clean": "rm -rf ./dist",
+    "lint": "npx prettier ./src --check && npx eslint ./src",
+    "lint:fix": "npx prettier ./src --write && npx eslint ./src --fix"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
     "eslint": "^9.17.0",
-    "typescript": "^5.7.2",
-    "typescript-eslint": "^8.18.1"
+    "globals": "^15.14.0",
+    "prettier": "3.4.2"
+  },
+  "dependencies": {
+    "@buf/meshtastic_protobufs.bufbuild_es": "^2.2.3-20241006120827-cc36fd21e859.1",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7"
   }
 }

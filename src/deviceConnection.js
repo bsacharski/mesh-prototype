@@ -1,0 +1,3 @@
+class DeviceConnection {
+	#isConnected = false;
+}
